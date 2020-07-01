@@ -51,7 +51,6 @@ export class RefDatabaseService extends BaseService {
     const $ref = cheerio.load(refRes.data.split('xmp').join('code')); // fuck the xmp element, it makes this take at least 30x longer when loading
 
     $list('dt a').each((i, e) => {
-      if (i > 10) { return; }
       const node = $list(e);
       const link = BASE_URL + '/' + node.attr('href');
       const name = node.text();
