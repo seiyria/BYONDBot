@@ -1,11 +1,16 @@
 
-# Discord Bot Example
+# BYONDBot
 
-A sample bot framework for Discord using DI & typeorm.
+A bot for the BYOND Discord server.
+
+## Developing
+
+* `npm run start:dev` to run in dev mode (with livereload)
+* `npm run start` to run in prod mode
 
 ## Environment Variables
 
-Put these values in a [`.env`](https://www.npmjs.com/package/dotenv) file.
+Put these values in a [`.env`](https://www.npmjs.com/package/dotenv) file or in the projects environment variables.
 
 ### Required
 
